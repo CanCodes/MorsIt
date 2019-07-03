@@ -2,7 +2,7 @@
 Shoot me a string i'll make it mors-string or sth. (Idk what they call a string which has been converted to mors.
 
 ## How does it work?
-import it and use morsIt(String) to work around.
+import it and use morsIt(String) and unMorsIt(morsed-String) to work around.
 
 
 ## ...Why?..
