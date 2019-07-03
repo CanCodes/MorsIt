@@ -50,3 +50,17 @@ def morsIt(str):
     for i in dictionary:
         str = str.replace(i, "{} ".format(dictionary[i]))
     return str
+
+def unMorsIt(str):
+    str = str.split(" ")
+    a = 0
+    for i in dictionary:
+        if a >= len(str):
+            break
+        for mors in str:
+            if(mors == dictionary[i]):
+                str[str.index(mors)] = mors.replace(dictionary[i], i)
+    for i in str:
+        if i == "":
+            str[str.index(i)] = " "
+    return "".join(str)
