@@ -48,5 +48,5 @@ dictionary = {
 def morsIt(str):
     str.lower()
     for i in dictionary:
-        str = str.replace(i, dictionary[i])
+        str = str.replace(i, "{} ".format(dictionary[i]))
     return str
